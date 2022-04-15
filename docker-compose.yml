@@ -29,6 +29,12 @@ services:
       - ipfshost=ipfs
       - ipfsprotocol=http
       - ipfsport=5001
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "3"
+    # stdin_open: true
+    # tty: true
     stdin_open: true
     tty: true
   # node-2:
